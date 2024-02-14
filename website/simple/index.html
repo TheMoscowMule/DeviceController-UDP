@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controller -lite</title>
+    <script src="./scripts/socket.js"></script> <!--socket script-->
+</head>
+<body style="padding: 40px;">
+    <!--connection setup-->
+    <div id="connectionSetupDiv">
+        <input type="text" placeholder="ip" id="ip" name="ip"><!-- ip address of socketio server-->
+        <br></br>
+        <input type="password" placeholder="password" id="password" name="password"><!--password for connecting to socketio server -->
+        <br></br>
+        <button type="button" id="connectButton" name="connectButton">Connect</button> <!--connect to server on click-->
+        <button type="button" id="disconnectButton" name="DisconnectButton">Disconnect</button> <!--disconnect from socketio server-->
+        <br></br>
+        <label id="connectionStatus" >Not Connected</label> <!--shows thhe current status of connection : default - Not Connected-->
+    </div>
+
+    <!--select user and command-->
+    <div id="selectionSetupDiv">
+        <select name="targets" id="targets" style="width: 100% !important;"><option value="none">None</option></select> <!-- available targets will be displayed once server is connected-->
+        <br></br>
+        <select name="commands" id="commands" style="width: 100% !important;"><option value="none">None</option></select> <!-- show commands that are available based on the OS of the target selected-->
+        <br></br>
+        <button id="send"  name="send" style="width: 100% !important;">Send</button><!--sends commmand to selected user on click-->    
+        <br></br>
+        <p id="selectedUser">selected user : --</p> <!-- displays the user selected -->
+        <br></br>
+    </div>
+
+    <!--output display-->
+    <div id="outputSectionDiv">
+        <textarea id="output" name="output" style="width: 100% !important;height: 150px !important;" disabled></textarea><!--all logs and replies from server will be showed here-->
+        <br></br>
+        <label id="notification"> nothing is connected</label> <!--notification will be displayed on new target connection-->
+    </div>
+
+    <!--scripts-->
+    <script src="./scripts/crypto.js"></script> <!--crypto script-->
+    <script src="./scripts/controller.js"></script> <!--main controller script-->
+    
+</body>
+</html>
