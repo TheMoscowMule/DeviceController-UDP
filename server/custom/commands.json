@@ -1,0 +1,76 @@
+
+{
+    "windows":{
+      "command":[
+        {"name":"getWifiPass","code":"GWPSD","type":"c","inputNo":0,"param":[]},
+        {"name":"lower volume","code":"LWVLM","type":"c","inputNo":0,"param":[]},
+        {"name":"higher volume","code":"HGVLM","type":"c","inputNo":0,"param":[]},
+        {"name":"battery percentage","code":"BTYPC","type":"c","inputNo":0,"param":[]},
+        {"name":"lower brightness","code":"LWBRT","type":"c","inputNo":0,"param":[]},
+        {"name":"higher brightness","code":"HGBRT","type":"c","inputNo":0,"param":[]},
+        {"name":"disable wifi","code":"DSWFI","type":"c","inputNo":0,"param":[]},
+        {"name":"installed applications","code":"INAPP","type":"c","inputNo":0,"param":[]},
+        {"name":"defender status","code":"DFSTT","type":"c","inputNo":0,"param":[]},
+        {"name":"switch defender","code":"SWDTT","type":"c","inputNo":0,"param":[]},
+        {"name":"switch bluetooth","code":"SWBTT","type":"c","inputNo":0,"param":[]},
+        {"name":"take screenshot","code":"TKSHT","type":"c","inputNo":0,"param":[]},
+        {"name":"restart pc","code":"RSTPC","type":"c","inputNo":0,"param":[]},
+        {"name":"Shutdown pc","code":"SHDPC","type":"e","inputNo":0,"param":[]}
+      ]
+    },
+    "android":{
+      "command":[
+        {"name":"check if wifi connected","code":"WFCON","type":"c","inputNo":0,"param":[]},
+        {"name":"battery percentage","code":"BTYPC","type":"c","inputNo":0,"param":[]},
+        {"name":"check display on/off","code":"DSPC","type":"c","inputNo":0,"param":[]},
+        {"name":"check phone charging or not","code":"CHGC","type":"c","inputNo":0,"param":[]},
+        {"name":"increase media volume","code":"MDVI","type":"c","inputNo":0,"param":[]},
+        {"name":"decrease media volume","code":"MDVD","type":"c","inputNo":0,"param":[]},
+        {"name":"increase ring volume","code":"RNVI","type":"c","inputNo":0,"param":[]},
+        {"name":"decrease ring volume","code":"RNVD","type":"c","inputNo":0,"param":[]},
+        {"name":"turn flash on","code":"FLSE","type":"c","inputNo":0,"param":[]},
+        {"name":"turn flash off","code":"FLSD","type":"c","inputNo":0,"param":[]},
+        {"name":"check if gps enabled","code":"GPSC","type":"e","inputNo":0,"param":[]},
+        {"name":"get installed app details","code":"INAPD","type":"e","inputNo":0,"param":[]},
+        {"name":"check headphones are connected","code":"HSCON","type":"e","inputNo":0,"param":[]},
+        {"name":"get android details","code":"ANDDT","type":"e","inputNo":0,"param":[]},
+        {"name":"check  bluetooth enabled/disabled","code":"BTTCK","type":"e","inputNo":0,"param":[]},
+        {"name":"open settings","code":"OPSTT","type":"e","inputNo":0,"param":[]},
+        {"name":"permissions granted/not granted","code":"PMSGN","type":"e","inputNo":0,"param":[]},
+        {"name":"get last 5 messages","code":"L5MSG","type":"e","inputNo":0,"param":[]},
+        {"name":"get contacts","code":"GTCNT","type":"e","inputNo":0,"param":[]},
+        {"name":"play sound","code":"PLSND","type":"e","inputNo":0,"param":[]},
+        
+        {"name":"save contact","code":"GTLOG","type":"e","inputNo":2,"param":["number","name"]},
+        {"name":"","code":"GTLOG","type":"e","inputNo":0,"param":[]},
+        {"name":"get last 10 call logs","code":"GTLOG","type":"e","inputNo":0,"param":[]},
+        {"name":"get last 10 call logs","code":"GTLOG","type":"e","inputNo":0,"param":[]},
+        {"name":"get last 10 call logs","code":"GTLOG","type":"e","inputNo":0,"param":[]},
+        {"name":"get last 10 call logs","code":"GTLOG","type":"e","inputNo":0,"param":[]}
+      ]
+    },
+    "web":{
+      "command":[
+        {"name":"web details","code":"WEBDT","type":"c","inputNo":0,"param":[]},
+        {"name":"redirect to page","code":"RDRPG","type":"e","inputNo":1,"param":["site"]}
+      ]
+    },
+    "server":{
+      "command":[
+        {"name":"getWifiPass","code":"GWP15","type":"c","inputNo":0,"param":[]},
+        {"name":"Shutdown pc","code":"SHD15","type":"e","inputNo":0,"param":[]}
+      ]
+    },
+    "ios":{
+      "command":[
+        {"name":"getWifiPass","code":"GWP15","type":"c","inputNo":0,"param":[]},
+        {"name":"Shutdown pc","code":"SHD15","type":"e","inputNo":0,"param":[]}
+      ]
+    },
+    "extension":{"command":[
+        {"name":"getWifiPass","code":"GWP15","type":"c","inputNo":0,"param":[]},
+        {"name":"Shutdown pc","code":"SHD15","type":"e","inputNo":0,"param":[]}
+      ]}
+  
+  }
+  
